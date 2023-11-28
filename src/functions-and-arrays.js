@@ -157,14 +157,14 @@ const wordsCount = [
   'matter'
 ];
 
-function howManyTimes(wordsCount, wordToCount) {
-  if (wordsCount.length === 0) {
+function howManyTimes(wordsArray, wordToCount) {
+  if (wordsArray.length === 0) {
     return 0;
   }
 
   let count = 0;
 
-  for (let word of wordsCount) {
+  for (let word of wordsArray) {
     if (word === wordToCount) {
       count++;
     }
